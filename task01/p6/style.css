@@ -60,7 +60,6 @@ p{
 .about-text {
     border-top: 2px solid #D35E5F;
     display: inline-block;
-    margin-bottom: 20px;
 }
 .about-text>p {
     font-size:20px;

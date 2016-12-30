@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+    min-width: 1280px;
+    font-family: 'Microsoft YaHei';
+}
+header {
+    width: 100%;
+    height: 60px;
+    font-size: 0;
+}
+header .banner-left {
+    vertical-align: middle;
+    position: relative;
+    width:10%;
+    background: url("../assets/icon-1.png") no-repeat left;
+    left:5%;
+    background-size: 22% 50%;
+    line-height: 60px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+}
+header .banner-left h1 {
+    color: #4E3A4F;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    cursor: pointer;
+}
+header nav {
+    height: 60px;
+    display: inline-block;
+}
+header nav ul {
+    list-style: none;
+}

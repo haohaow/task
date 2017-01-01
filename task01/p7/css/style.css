@@ -27,10 +27,91 @@ header .banner-left h1 {
     margin: 0;
     cursor: pointer;
 }
-header nav {
+header nav{
     height: 60px;
+    width: 40%;
     display: inline-block;
+    vertical-align: middle;
+
+    position: relative;
+    left: 40%;
 }
-header nav ul {
+header nav ul{
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
     list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li{
+    display: inline-block;
+    width: 15%;
+    position: relative;
+    bottom: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #97969B;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-transition:color 0.4s ease-in-out;
+    -moz-transition:color 0.4s ease-in-out;
+    transition:color 0.4s ease-in-out;
+}
+header nav ul li:hover{
+    color: #F04C57;
+}
+header nav ul .move{
+    position: absolute;
+    border-top: 4px solid #E53C3C;
+    left: 0;
+    top: 56px;
+    -webkit-transition: left 0.4s ease-in-out;
+    -moz-transition: left 0.4s ease-in-out;
+    transition: left 0.4s ease-in-out;
+}
+header nav ul li:nth-child(1):hover~.move{
+    left: 0;
+}
+header nav ul li:nth-child(2):hover~.move{
+    left: 20%;
+}
+header nav ul li:nth-child(3):hover~.move{
+    left: 40%;
+}
+header nav ul li:nth-child(4):hover~.move{
+    left: 60%;
+}
+header nav ul li:nth-child(5):hover~.move{
+    left: 80%;
+}
+header .banner-right {
+    color: #E53C3C;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    width: 7%;
+    vertical-align: middle;
+    background: url("../assets/icon-2.jpg") no-repeat left;
+    background-size: 15px 18px;
+    left: 40%;
+    bottom: 5px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+#section-1 {
+    width: 100%;
+    height: 650px;
+    background-image: url(../assets/pic01.jpg);
+    background-size: 100% auto;
+}
+#section-1 .mes p {
+    margin:0;
+    font-size: 22px;
 }

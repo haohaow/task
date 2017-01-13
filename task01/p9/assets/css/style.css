@@ -1,10 +1,10 @@
-header {
+body>header {
     width: 100%;
     height: 56px;
     background-color: #2A8BBF;
 }
 
-header .icon {
+body>header .icon {
     display: inline-block;
     position: relative;
     top: 10px;
@@ -13,12 +13,12 @@ header .icon {
     height: 36px;
     background: url(../images/icon-1.png) no-repeat;
 }
-header .search {
+body>header .search {
     display: inline-block;
     position: relative;
     left: 60%;
 }
-header .search input[type="text"] {
+body>header .search input[type="text"] {
     border: none;
     outline: none;
     width: 300px;
@@ -28,7 +28,7 @@ header .search input[type="text"] {
     box-sizing: border-box;
     border-radius:20px;
 }
-header .login {
+body>header .login {
     position: relative;
     left: 88%;
     top: -20px;
@@ -36,6 +36,93 @@ header .login {
     color: #ffffff;
     width: 70px;
 }
-header .login .fa {
+body>header .login .fa {
     color: #ffffff;
+}
+
+.container {
+    width:100%;
+    font-family: "Microsoft YaHei";
+    font-size: 0;
+}
+
+.container .content-l {
+    width:20%;
+    background-color: #2B2E3C;
+    height: 1300px;
+    float:left;
+}
+.container .content-l .user {
+    height: 150px;
+    width: 100%;
+}
+.container .content-l .user .img {
+    width: 100%;
+    background: url("../images/icon-2.png") no-repeat 60px 18px;
+    height: 90px;
+    text-align: center;
+}
+.container .content-l .user .img span {
+    line-height: 90px;
+    font-size: 14px;
+    color:#E6E4E6;
+    margin-left: 60px;
+    position: relative;
+}
+.container .content-l .user .mes {
+    width: 100%;
+    height: 60px;
+    color:#657486;
+}
+.container .content-l .user .mes .mes-l,.container .content-l .user .mes .mes-r {
+    width: 50%;
+    height: 28px;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+.container .content-l .user .mes .mes-l {
+    border-right: 1px solid #5C5F74;
+}
+.container .content-l .user .mes .mes-r {
+    border-left: 1px solid #5C5F74;
+}
+
+.container .content-l .user .mes .mes-l span:first-child {
+    position: relative;
+    left: 20px;
+}
+.container .content-l .user .mes .mes-r span:last-of-type{
+    position: relative;
+    right: 20px;
+}
+.container .container-l .cells {
+    width: 100%;
+    color: #586576;
+}
+.container .container-l .cells .cell-1 {
+    position: relative;
+    color: #000;
+    box-sizing: border-box;
+}
+.container .container-l .cells .cell-1
+.container .container-l .cells .cell-1>i {
+    width: 20px;
+    margin: 0 8px;
+    text-align: center;
+    color: #ffffff;
+}
+.container .container-l .cells .cell-1>input {
+    width: 85%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.container .container-l .cells .cell-1>i,
+.container .container-l .cells .cell-1 span {
+    height: 30px;
+    line-height: 30px;
 }

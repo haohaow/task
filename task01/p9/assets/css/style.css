@@ -1,3 +1,11 @@
+@-webkit-keyframes cell-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 body>header {
     width: 100%;
     height: 56px;
@@ -97,23 +105,25 @@ body>header .login .fa {
     position: relative;
     right: 20px;
 }
-.container .container-l .cells {
+.container .content-l .cells {
     width: 100%;
     color: #586576;
 }
-.container .container-l .cells .cell-1 {
+.container .content-l .cells .cell-1 {
     position: relative;
-    color: #000;
+    /*color: #000;*/
     box-sizing: border-box;
+    width: 100%;
+    font-size: 12px;
+    padding-left: 15%;
 }
-.container .container-l .cells .cell-1
-.container .container-l .cells .cell-1>i {
+.container .content-l .cells .cell-1
+.container .content-l .cells .cell-1>i {
     width: 20px;
     margin: 0 8px;
     text-align: center;
-    color: #ffffff;
 }
-.container .container-l .cells .cell-1>input {
+.container .content-l .cells .cell-1>input {
     width: 85%;
     height: 30px;
     position: absolute;
@@ -121,8 +131,190 @@ body>header .login .fa {
     opacity: 0;
     cursor: pointer;
 }
-.container .container-l .cells .cell-1>i,
-.container .container-l .cells .cell-1 span {
+.container .content-l .cells .cell-1:hover{
+    background-color: #373D4D;
+}
+.container .content-l .cells .cell-1>i,
+.container .content-l .cells .cell-1 span {
     height: 30px;
     line-height: 30px;
+}
+.container .content-l .cells .cell-1:hover>i,
+.container .content-l .cells .cell-1:hover>span,
+.container .content-l .cells .cell-1>input:checked~i,
+.container .content-l .cells .cell-1>input:checked~span{
+    color: #EDEDEF;
+}
+.container .content-l .cells .cell-1 input {
+    opacity:0;
+}
+.container .content-l .cells .cell-3 {
+    padding-left: 20%;
+}
+.container .content-l .cells .cell-1 .cell-2 {
+    display: none;
+    padding-left: 10%;
+    position: relative;
+}
+.container .content-l .cells .cell-1 .cell-2>input{
+    width: 90%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.container .content-l .cells .cell-1 .cell-2>i{
+    /*margin: 0 6px;*/
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+}
+.container .content-l .cells .cell-1>input:checked~.cell-2 {
+    display: block;
+    animation: cell-in 0.5s ease-in-out;
+    -webkit-animation: cell-in 0.5s ease-in-out;
+}
+.container .content-l .cells .cell-1 .cell-2:hover>i,
+.container .content-l .cells .cell-1 .cell-2:hover>span,
+.container .content-l .cells .cell-1 .cell-2>input:checked~i,
+.container .content-l .cells .cell-1 .cell-2>input:checked~span{
+    color: #ededef;
+}
+.container .content-l .cells .cell-1 .cell-3 {
+    display: none;
+    padding-left: 10%;
+    position: relative;
+}
+.container .content-l .cells .cell-1 .cell-3>input{
+    width: 80%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.container .content-l .cells .cell-1 .cell-3:hover>i,
+.container .content-l .cells .cell-1 .cell-3:hover>span,
+.container .content-l .cells .cell-1 .cell-3>input:checked~i,
+.container .content-l .cells .cell-1 .cell-3>input:checked~span{
+    color: #ededef;
+}
+.container .content-l .cells .cell-1 .cell-2>input:checked~.cell-3 {
+    display: block;
+    -webkit-animation: cell-in 0.5s ease-in-out;
+    -o-animation: cell-in 0.5s ease-in-out;
+    animation: cell-in 0.5s ease-in-out;
+}
+.container .content-r {
+    width: 80%;
+    height: 1300px;
+    float: right;
+    font-size: 0;
+    background-color: #EDEDED;
+}
+.container .content-r header {
+    background-color: #ffffff;
+    width: 100%;
+    height: 30px;
+}
+.container .content-r header span {
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #BABABA;
+    width: 100%;
+    height: 30px;
+}
+.container .content-r .content {
+    margin: 0 auto;
+    width: 890px;
+}
+.container .content-r .content-1 {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    height: 80px;
+    font-size: 12px;
+}
+.container .content-r .content-1 .cell-1 {
+    width: 20%;
+    height: 80px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 80px;
+}
+.container .content-r .content-1 .cell-2 {
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    line-height: 30px;
+    margin: 10px 0;
+    background: url(../images/icon-3.png) no-repeat 88% 10px;
+
+}
+.container .content-r .content-1 .cell-3 {
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 30px;
+    margin: 10px 0;
+    text-align: left;
+}
+.container .content-r .content-1 .cell-4 {
+    width: 10%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 80px;
+}
+.container .content-r .content-1 select {
+    height: 22px;
+    line-height: 20px;
+    font-size: 12px;
+    outline: 0;
+    border-radius: 0;
+    border-color: #D7D7D7;
+    box-sizing: border-box;
+    padding-left: 5px;
+    -webkit-appearance: none;
+    background: url(../images/icon-5.png) no-repeat 93% 7px;
+    -webkit-appearance: none;
+}
+.container .content-r .content-1>div[class^="cell-"]:not(:last-of-type)>span {
+    color: #C3C3C3;
+}
+.container .content-r .content-1>div[class^="cell-"]:not(:last-of-type)>select {
+    margin: 0 10px;
+}
+.container .content-r .content-1 .cell-1 select {
+    width: 45%;
+}
+.container .content-r .content-1 .cell-2 select {
+    width: 51%;
+}
+.container .content-r .content-1 .cell-3 input{
+    margin:0 10px;
+}
+.container .content-r .content .content-1 .cell-3>select:nth-of-type(1){
+    width: 16%;
+}
+.container .content-r .content .content-1 .cell-3>select:nth-of-type(2){
+    width: 20%;
+}
+.container .content-r .content .content-1 .cell-3>select:nth-of-type(3){
+    width: 32%;
+}
+.container .content-r .content .content-1 .cell-4 input[type="submit"]{
+    background-color: #3D8CBF;
+    width: 50px;
+    height: 26px;
+    color: #ffffff;
+    border: 0;
 }

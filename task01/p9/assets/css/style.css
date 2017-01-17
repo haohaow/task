@@ -318,3 +318,71 @@ body>header .login .fa {
     color: #ffffff;
     border: 0;
 }
+.container .content-r .content .content-2 {
+    box-sizing: border-box;
+    width: 890px;
+    height: 70px;
+    margin-top: 10px;
+}
+.container .content-r .content .content-2 .to-l,
+.container .content-r .content .content-2 .to-r{
+    display: inline-block;
+    margin-right: 6px;
+    height: 100%;
+    font-size: 40px;
+    width: 30px;
+    color:#A9A9A9;
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: top;
+
+}
+.container .content-r .content .content-2 .cell {
+    margin-right: 6px;
+    background-color: #ffffff;
+    width: 110px;
+    text-align: center;
+    height: 100%;
+    font-size: 12px;
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 20px;
+
+    border-top: 3px solid #fff;
+    cursor: pointer;
+
+    -webkit-transition: border-color 0.5s ease-in-out;
+    -moz-transition: border-color 0.5s ease-in-out;
+    transition: border-color 0.5s ease-in-out;
+}
+.container .content-r .content .content-2 .cell:hover {
+    border-top: 3px solid #4388C9;
+}
+.container .content-r .content .content-2 .cell span:first-child {
+    font-size: 14px;
+}
+.container .content-r .content .content-2 .cell span:nth-child(2) {
+    color:#A9A9A9;
+    font-size: 14px;
+}
+.container .content-r .content .content-2 .cell span:nth-child(2)>span {
+    color:#E9631B;
+    font-size:16px;
+}
+.container .content-r .content .content-2 .history {
+    display: inline-block;
+    width: 120px;
+    height: 100%;
+    font-size: 12px;
+    line-height: 70px;
+    text-align: center;
+    vertical-align: top;
+    background-color: #ffffff;
+}
+.container .content-r .content .content-2 .history>i {
+    margin-right: 4px;
+    font-size: 34px;
+}
+.container .content-r .content .content-2 .history>span{
+    color:#7B7B7B;
+}

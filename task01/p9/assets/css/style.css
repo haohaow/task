@@ -346,7 +346,14 @@ body>header .login .fa {
     font-size: 12px;
     box-sizing: border-box;
     display: inline-block;
-    line-height: 20px;
+    line-height: 28px;
+
+    /*width: 12%;*/
+    /*line-height: 27px;*/
+    /*margin-right: 0.5%;*/
+    /*padding: 5px 0;*/
+    /*border-top: 3px solid #fff;*/
+    /*cursor: pointer;*/
 
     border-top: 3px solid #fff;
     cursor: pointer;
@@ -359,15 +366,15 @@ body>header .login .fa {
     border-top: 3px solid #4388C9;
 }
 .container .content-r .content .content-2 .cell span:first-child {
-    font-size: 14px;
+    font-size: 12px;
 }
-.container .content-r .content .content-2 .cell span:nth-child(2) {
+.container .content-r .content .content-2 .cell span:nth-of-type(2){
     color:#A9A9A9;
     font-size: 14px;
 }
-.container .content-r .content .content-2 .cell span:nth-child(2)>span {
+.container .content-r .content .content-2 .cell span:nth-of-type(2)>span {
     color:#E9631B;
-    font-size:16px;
+    font-size:20px;
 }
 .container .content-r .content .content-2 .history {
     display: inline-block;
@@ -385,4 +392,17 @@ body>header .login .fa {
 }
 .container .content-r .content .content-2 .history>span{
     color:#7B7B7B;
+}
+.container .content-r .content .content-3 {
+    margin-top: 10px;
+    width: 100%;
+    height: 90px;
+}
+.container .content-r .content .content-3 .cell {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 23%;
+    margin-right: 2%;
+    height: 100%;
+    background-color: #ffffff;
 }
